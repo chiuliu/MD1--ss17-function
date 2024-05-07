@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arr = [23, 34, 12, 11, 5, 9, 55, 61];
+
+      function tinhtong(arr) {
+        sum = arr.reduce((total, item) => {
+          return (total += item);
+        }, 0);
+      }
+      tinhtong(arr);
+      console.log(sum);
+    </script>
+  </body>
+</html>
